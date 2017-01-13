@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_slider_throttle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="bluetooth.control.motor.brushless.sliderthrottlebluetooth.SliderThrottle">
+
+    <SeekBar
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:progress="1000"
+        android:max="2000"
+        android:rotation="270"
+        android:layout_marginStart="0dp"
+        android:id="@+id/throttle_slider"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/full_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="60dp"
+        android:text="100 %"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/half_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="120dp"
+        android:text="50 %"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/zero_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="225dp"
+        android:text="0 %"
+        android:visibility="gone"/>
+
+    <TextView
+        android:text="Throttle :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textSize="20dp"
+        android:layout_marginStart="330dp"
+        android:id="@+id/throttle_label"
+        android:visibility="gone"/>
+
+    <TextView
+        android:text="0 %"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textSize="20dp"
+        android:layout_marginStart="420dp"
+        android:id="@+id/throttle_label_val"
+        android:visibility="gone"/>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+
+    <Button
+        android:text="Select Device"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/sel_dev_button"/>
+
+    <Button
+        android:text="DISCONNECT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/disconnect_button"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>
