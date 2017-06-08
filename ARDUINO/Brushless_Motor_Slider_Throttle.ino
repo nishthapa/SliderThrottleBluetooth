@@ -23,7 +23,7 @@ void loop()
     for(i=0;i<=3;i++)
     {
       RAW_DATA[i] = bluetooth.read();         //read data from bluetooth stream
-      delay(1);                               //give some time for finish reading
+      delay(1);                               //give some time to finish reading
     }
   }
   THROTTLE_STR = (String)RAW_DATA;            //convert read data to string
